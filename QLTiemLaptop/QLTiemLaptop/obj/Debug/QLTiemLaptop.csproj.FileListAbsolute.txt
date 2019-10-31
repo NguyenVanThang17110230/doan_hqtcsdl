@@ -8,3 +8,13 @@ C:\Users\Admin\source\repos\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.exe
 C:\Users\Admin\source\repos\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.pdb
 C:\Users\Admin\source\repos\QLTiemLaptop\QLTiemLaptop\bin\Debug\QLTiemLaptop.pdb
 C:\Users\Admin\source\repos\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.csprojAssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\Debug\QLTiemLaptop.exe.config
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\Debug\QLTiemLaptop.exe
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\Debug\QLTiemLaptop.pdb
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.csprojAssemblyReference.cache
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.Form1.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.FormChinh.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.exe
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\Debug\QLTiemLaptop.pdb
