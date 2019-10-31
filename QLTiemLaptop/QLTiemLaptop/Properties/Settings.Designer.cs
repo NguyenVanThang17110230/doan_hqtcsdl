@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace QLLaptop.Properties
+namespace QLTiemLaptop.Properties
 {
 
 

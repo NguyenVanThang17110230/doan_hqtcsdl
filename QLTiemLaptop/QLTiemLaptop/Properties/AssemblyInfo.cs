@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("QLLaptop")]
+[assembly: AssemblyTitle("QLTiemLaptop")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("QLLaptop")]
+[assembly: AssemblyProduct("QLTiemLaptop")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3d647b03-ff0d-47ef-af0b-17f782f4c6d9")]
+[assembly: Guid("40561d57-f774-48e7-a9e3-678adc3500bb")]
 
 // Version information for an assembly consists of the following four values:
 //

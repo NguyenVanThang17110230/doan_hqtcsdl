@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QLLaptop
+namespace QLTiemLaptop
 {
-    public partial class DangNhap : Form
+    public partial class FormChinh : Form
     {
-        public DangNhap()
+        public FormChinh()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
