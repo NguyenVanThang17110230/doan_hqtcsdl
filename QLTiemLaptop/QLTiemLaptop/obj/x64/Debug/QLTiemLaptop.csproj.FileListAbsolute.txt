@@ -1,0 +1,9 @@
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\x64\Debug\QLTiemLaptop.exe.config
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\x64\Debug\QLTiemLaptop.exe
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\x64\Debug\QLTiemLaptop.pdb
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.Form1.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.FormChinh.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.Properties.Resources.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.exe
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.pdb
