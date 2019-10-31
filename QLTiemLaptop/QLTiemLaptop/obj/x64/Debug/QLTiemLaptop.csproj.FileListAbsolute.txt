@@ -7,3 +7,4 @@ C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x6
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.csproj.GenerateResource.cache
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.exe
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.pdb
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.csprojAssemblyReference.cache
