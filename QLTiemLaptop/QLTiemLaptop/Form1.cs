@@ -34,6 +34,7 @@ namespace QLTiemLaptop
                 this.Hide();
                 Form main = new FormChinh();
                 main.ShowDialog();
+                this.Close();
             }
             else
             {

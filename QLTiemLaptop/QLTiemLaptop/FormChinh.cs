@@ -18,10 +18,11 @@ namespace QLTiemLaptop
         public FormChinh()
         {
             InitializeComponent();
+            Load_Data();
         }
         public void Load_Data()
         {
-            string str = "select * from HoaDon";
+            string str = "select * from HoaDonBan";
             DataTable dt = connect.getDataTable(str);
             dtgv_hoadon.DataSource = dt;
         }
@@ -59,11 +60,62 @@ namespace QLTiemLaptop
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            string them = @"exec dbo.uspInserthoadon '" + txt_idhoadon.Text + "','" + txt_idlap.Text
-                + "',N'" + txt_idkhach.Text + "',N'" + txt_idnhanvien.Text + "',N'" + txt_soluong.Text +
-                "','" + txt_ngayban.Text + "','" + txt_dongia.Text + "','" + txt_sdt.Text + "'";
+            string them = @"exec dbo.uspInserthoadon N'" + txt_idhoadon.Text + "',N'" + txt_idlap.Text
+                + "',N'" + txt_idkhach.Text + "',N'" + txt_idnhanvien.Text + "','" + txt_soluong.Text +
+                "','" + txt_ngayban.Text + "','" + txt_dongia.Text + "',N'" + txt_sdt.Text + "'";
             connect.executeQuery(them);
             Load_Data();
+        }
+
+        private void txt_idlap_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_idnhanvien_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            string xoa = @"EXEC dbo.uspDeleteHoadon'" + txt_idhoadon.Text + "'";
+            DialogResult dialog = MessageBox.Show("Bạn có muốn xóa sách :" + txt_idhoadon.Text,
+                "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                try
+                {
+                    connect.executeQuery(xoa);
+                    MessageBox.Show("Xóa thành công!!");
+                    Load_Data();
+                    this.txt_idhoadon.Clear();
+                    this.txt_idkhach.Clear();
+                    this.txt_idnhanvien.Clear();
+                    this.txt_idlap.Clear();
+                    this.txt_soluong.Clear();
+                    this.txt_ngayban.Clear();
+                    this.txt_sdt.Clear();
+                    this.txt_dongia.Clear();
+                }
+                catch (Exception)
+                {
+                }
+            }
+            else if (dialog == DialogResult.No)
+            {
+            }
+        }
+
+        private void btn_fix_Click(object sender, EventArgs e)
+        {
+            string fix = @"exec dbo.uspFixHoadon N'" + txt_idhoadon.Text + "',N'" + txt_idlap.Text
+                + "',N'" + txt_idkhach.Text + "',N'" + txt_idnhanvien.Text + "','" + txt_soluong.Text +
+                "','" + txt_ngayban.Text + "','" + txt_dongia.Text + "',N'" + txt_sdt.Text + "'";
+            connect.executeQuery(fix);
+            MessageBox.Show("Sữa thành công!!");
+            Load_Data();
+
         }
     }
 }
