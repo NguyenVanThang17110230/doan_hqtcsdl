@@ -32,28 +32,27 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.txt_idhoadon = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_sdt = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.txt_idkhach = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txt_idnhanvien = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_dongia = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_idnhanvien = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_idlap = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_ngayban = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_sdt = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txt_idlap = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_idkhach = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_soluong = new System.Windows.Forms.TextBox();
@@ -72,11 +71,11 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadon)).BeginInit();
@@ -93,7 +92,7 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(5, 6, 2, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1316, 522);
+            this.tabControl1.Size = new System.Drawing.Size(1236, 522);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -104,7 +103,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1308, 492);
+            this.tabPage1.Size = new System.Drawing.Size(1228, 492);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Hóa đơn bán hàng";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -117,13 +116,12 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(20, 17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1262, 454);
+            this.panel1.Size = new System.Drawing.Size(1179, 454);
             this.panel1.TabIndex = 0;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.panel10);
             this.panel3.Controls.Add(this.panel13);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel12);
@@ -134,16 +132,8 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(18, 14);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1221, 176);
+            this.panel3.Size = new System.Drawing.Size(1137, 176);
             this.panel3.TabIndex = 2;
-            // 
-            // panel10
-            // 
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Location = new System.Drawing.Point(1028, 3);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(186, 154);
-            this.panel10.TabIndex = 10;
             // 
             // panel13
             // 
@@ -172,6 +162,33 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Mã hóa đơn";
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.txt_sdt);
+            this.panel6.Location = new System.Drawing.Point(636, 110);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(381, 48);
+            this.panel6.TabIndex = 2;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label7.Location = new System.Drawing.Point(3, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 19);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Số điện thoại";
+            // 
+            // txt_sdt
+            // 
+            this.txt_sdt.Location = new System.Drawing.Point(139, 12);
+            this.txt_sdt.Name = "txt_sdt";
+            this.txt_sdt.Size = new System.Drawing.Size(216, 25);
+            this.txt_sdt.TabIndex = 5;
+            // 
             // panel12
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -182,22 +199,23 @@
             this.panel12.Size = new System.Drawing.Size(294, 45);
             this.panel12.TabIndex = 8;
             // 
-            // txt_idkhach
+            // txt_idnhanvien
             // 
-            this.txt_idkhach.Location = new System.Drawing.Point(119, 12);
-            this.txt_idkhach.Name = "txt_idkhach";
-            this.txt_idkhach.Size = new System.Drawing.Size(167, 25);
-            this.txt_idkhach.TabIndex = 1;
+            this.txt_idnhanvien.Location = new System.Drawing.Point(136, 8);
+            this.txt_idnhanvien.Name = "txt_idnhanvien";
+            this.txt_idnhanvien.Size = new System.Drawing.Size(153, 25);
+            this.txt_idnhanvien.TabIndex = 5;
+            this.txt_idnhanvien.TextChanged += new System.EventHandler(this.txt_idnhanvien_TextChanged);
             // 
-            // label2
+            // label4
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(-1, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 19);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Mã khách hàng";
+            this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.Location = new System.Drawing.Point(3, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 19);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Mã lap";
             // 
             // panel9
             // 
@@ -206,7 +224,7 @@
             this.panel9.Controls.Add(this.txt_dongia);
             this.panel9.Location = new System.Drawing.Point(636, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(348, 99);
+            this.panel9.Size = new System.Drawing.Size(381, 99);
             this.panel9.TabIndex = 5;
             // 
             // label8
@@ -223,7 +241,7 @@
             // 
             this.txt_dongia.Location = new System.Drawing.Point(3, 51);
             this.txt_dongia.Name = "txt_dongia";
-            this.txt_dongia.Size = new System.Drawing.Size(320, 25);
+            this.txt_dongia.Size = new System.Drawing.Size(352, 25);
             this.txt_dongia.TabIndex = 4;
             // 
             // panel8
@@ -236,23 +254,23 @@
             this.panel8.Size = new System.Drawing.Size(294, 48);
             this.panel8.TabIndex = 4;
             // 
-            // label3
+            // label2
             // 
-            this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(3, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 19);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Mã nhân viên";
+            this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.Location = new System.Drawing.Point(-1, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(110, 19);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Mã khách hàng";
             // 
-            // txt_idnhanvien
+            // txt_idlap
             // 
-            this.txt_idnhanvien.Location = new System.Drawing.Point(136, 8);
-            this.txt_idnhanvien.Name = "txt_idnhanvien";
-            this.txt_idnhanvien.Size = new System.Drawing.Size(153, 25);
-            this.txt_idnhanvien.TabIndex = 5;
-            this.txt_idnhanvien.TextChanged += new System.EventHandler(this.txt_idnhanvien_TextChanged);
+            this.txt_idlap.Location = new System.Drawing.Point(136, 12);
+            this.txt_idlap.Name = "txt_idlap";
+            this.txt_idlap.Size = new System.Drawing.Size(153, 25);
+            this.txt_idlap.TabIndex = 4;
+            this.txt_idlap.TextChanged += new System.EventHandler(this.txt_idlap_TextChanged);
             // 
             // panel7
             // 
@@ -281,33 +299,6 @@
             this.txt_ngayban.Size = new System.Drawing.Size(167, 25);
             this.txt_ngayban.TabIndex = 2;
             // 
-            // panel6
-            // 
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.txt_sdt);
-            this.panel6.Location = new System.Drawing.Point(636, 110);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(348, 48);
-            this.panel6.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Location = new System.Drawing.Point(3, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 19);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Số điện thoại";
-            // 
-            // txt_sdt
-            // 
-            this.txt_sdt.Location = new System.Drawing.Point(139, 12);
-            this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.Size = new System.Drawing.Size(184, 25);
-            this.txt_sdt.TabIndex = 5;
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -318,23 +309,22 @@
             this.panel5.Size = new System.Drawing.Size(291, 50);
             this.panel5.TabIndex = 1;
             // 
-            // label4
+            // label3
             // 
-            this.label4.AutoSize = true;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(3, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Mã lap";
+            this.label3.AutoSize = true;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label3.Location = new System.Drawing.Point(3, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 19);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Mã nhân viên";
             // 
-            // txt_idlap
+            // txt_idkhach
             // 
-            this.txt_idlap.Location = new System.Drawing.Point(136, 12);
-            this.txt_idlap.Name = "txt_idlap";
-            this.txt_idlap.Size = new System.Drawing.Size(153, 25);
-            this.txt_idlap.TabIndex = 4;
-            this.txt_idlap.TextChanged += new System.EventHandler(this.txt_idlap_TextChanged);
+            this.txt_idkhach.Location = new System.Drawing.Point(119, 12);
+            this.txt_idkhach.Name = "txt_idkhach";
+            this.txt_idkhach.Size = new System.Drawing.Size(167, 25);
+            this.txt_idkhach.TabIndex = 1;
             // 
             // panel4
             // 
@@ -370,7 +360,7 @@
             this.dtgv_hoadon.Name = "dtgv_hoadon";
             this.dtgv_hoadon.RowHeadersWidth = 51;
             this.dtgv_hoadon.RowTemplate.Height = 24;
-            this.dtgv_hoadon.Size = new System.Drawing.Size(1221, 194);
+            this.dtgv_hoadon.Size = new System.Drawing.Size(1137, 194);
             this.dtgv_hoadon.TabIndex = 1;
             this.dtgv_hoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadon_CellContentClick);
             // 
@@ -385,12 +375,12 @@
             this.panel2.Controls.Add(this.btn_clear);
             this.panel2.Location = new System.Drawing.Point(18, 196);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1221, 39);
+            this.panel2.Size = new System.Drawing.Size(1137, 39);
             this.panel2.TabIndex = 0;
             // 
             // btn_in
             // 
-            this.btn_in.Location = new System.Drawing.Point(1075, 3);
+            this.btn_in.Location = new System.Drawing.Point(991, 4);
             this.btn_in.Name = "btn_in";
             this.btn_in.Size = new System.Drawing.Size(139, 28);
             this.btn_in.TabIndex = 7;
@@ -399,7 +389,7 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(659, 3);
+            this.btn_delete.Location = new System.Drawing.Point(594, 3);
             this.btn_delete.Name = "btn_delete";
             this.btn_delete.Size = new System.Drawing.Size(139, 28);
             this.btn_delete.TabIndex = 5;
@@ -409,7 +399,7 @@
             // 
             // btn_fix
             // 
-            this.btn_fix.Location = new System.Drawing.Point(438, 3);
+            this.btn_fix.Location = new System.Drawing.Point(391, 3);
             this.btn_fix.Name = "btn_fix";
             this.btn_fix.Size = new System.Drawing.Size(139, 28);
             this.btn_fix.TabIndex = 4;
@@ -419,7 +409,7 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(220, 3);
+            this.btn_add.Location = new System.Drawing.Point(197, 3);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(139, 28);
             this.btn_add.TabIndex = 3;
@@ -429,12 +419,13 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(872, 3);
+            this.btn_exit.Location = new System.Drawing.Point(790, 4);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(139, 28);
             this.btn_exit.TabIndex = 6;
             this.btn_exit.Text = "Thoát";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // btn_clear
             // 
@@ -473,7 +464,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1339, 568);
+            this.ClientSize = new System.Drawing.Size(1259, 568);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -484,6 +475,8 @@
             this.panel3.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel9.ResumeLayout(false);
@@ -492,8 +485,6 @@
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -544,6 +535,5 @@
         private System.Windows.Forms.Button btn_add;
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_clear;
-        private System.Windows.Forms.Panel panel10;
     }
 }

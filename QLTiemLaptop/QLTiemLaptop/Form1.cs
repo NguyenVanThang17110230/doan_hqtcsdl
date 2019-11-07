@@ -46,7 +46,9 @@ namespace QLTiemLaptop
 
         private void btn_exit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)

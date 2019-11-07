@@ -25,6 +25,7 @@ namespace QLTiemLaptop
             string str = "select * from HoaDonBan";
             DataTable dt = connect.getDataTable(str);
             dtgv_hoadon.DataSource = dt;
+            dtgv_hoadon.AutoResizeColumns();
         }
         private void dtgv_hoadon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -116,6 +117,13 @@ namespace QLTiemLaptop
             MessageBox.Show("Sữa thành công!!");
             Load_Data();
 
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+                Application.Exit();
         }
     }
 }
