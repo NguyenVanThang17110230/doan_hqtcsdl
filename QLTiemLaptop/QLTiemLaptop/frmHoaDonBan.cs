@@ -13,19 +13,22 @@ using System.Net.NetworkInformation;
 
 namespace QLTiemLaptop
 {
-    public partial class FormChinh : Form
+    public partial class frmHoaDonBan : Form
     {
-        public FormChinh()
+        public frmHoaDonBan()
         {
             InitializeComponent();
             Load_Data();
+            //Load_datanhap();
         }
+        //xử lý hóa đơn bán
         public void Load_Data()
         {
             string str = "select * from HoaDonBan";
             DataTable dt = connect.getDataTable(str);
             dtgv_hoadon.DataSource = dt;
             dtgv_hoadon.AutoResizeColumns();
+            
         }
         private void dtgv_hoadon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -33,14 +36,15 @@ namespace QLTiemLaptop
             {
                 DataGridViewRow row = new DataGridViewRow();
                 row = dtgv_hoadon.Rows[e.RowIndex];
-                txt_idhoadon.Text = row.Cells[0].Value.ToString();
-                txt_idlap.Text = row.Cells[1].Value.ToString();
-                txt_idkhach.Text = row.Cells[2].Value.ToString();
-                txt_idnhanvien.Text = row.Cells[3].Value.ToString();
-                txt_soluong.Text = row.Cells[4].Value.ToString();
-                txt_ngayban.Text = row.Cells[5].Value.ToString();
-                txt_dongia.Text = row.Cells[6].Value.ToString();
-                txt_sdt.Text = row.Cells[7].Value.ToString();
+                txb_idhoadon.Text = row.Cells[0].Value.ToString();
+                txb_idlap.Text = row.Cells[1].Value.ToString();
+                txb_idkhach.Text = row.Cells[2].Value.ToString();
+                txb_idnhanvien.Text = row.Cells[3].Value.ToString();
+                txb_soluong.Text = row.Cells[4].Value.ToString();
+                txb_ngayban.Text = row.Cells[5].Value.ToString();
+                txb_sdt.Text = row.Cells[6].Value.ToString();
+                txb_dongia.Text = row.Cells[8].Value.ToString();               
+                txb_tongtien.Text = row.Cells[9].Value.ToString();
             }
             catch (Exception) { }
             
@@ -49,21 +53,22 @@ namespace QLTiemLaptop
 
         private void btn_clear_Click(object sender, EventArgs e)
         {
-            this.txt_idhoadon.Clear();
-            this.txt_idkhach.Clear();
-            this.txt_idnhanvien.Clear();
-            this.txt_idlap.Clear();
-            this.txt_soluong.Clear();
-            this.txt_ngayban.Clear();
-            this.txt_sdt.Clear();
-            this.txt_dongia.Clear();
+            this.txb_idhoadon.Clear();
+            this.txb_idkhach.Clear();
+            this.txb_idnhanvien.Clear();
+            this.txb_idlap.Clear();
+            this.txb_soluong.Clear();
+            this.txb_ngayban.Clear();
+            this.txb_sdt.Clear();
+            this.txb_dongia.Clear();
+            this.txb_tongtien.Clear();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            string them = @"exec dbo.uspInserthoadon N'" + txt_idhoadon.Text + "',N'" + txt_idlap.Text
-                + "',N'" + txt_idkhach.Text + "',N'" + txt_idnhanvien.Text + "','" + txt_soluong.Text +
-                "','" + txt_ngayban.Text + "','" + txt_dongia.Text + "',N'" + txt_sdt.Text + "'";
+            string them = @"exec dbo.uspInserthoadon N'" + txb_idhoadon.Text + "',N'" + txb_idlap.Text
+                + "',N'" + txb_idkhach.Text + "',N'" + txb_idnhanvien.Text + "','" + txb_soluong.Text +
+                "','" + txb_ngayban.Text + "',N'" + txb_sdt.Text + "','" + "" + "','" + txb_dongia.Text + "','" + txb_tongtien.Text + "'";
             connect.executeQuery(them);
             Load_Data();
         }
@@ -80,8 +85,8 @@ namespace QLTiemLaptop
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            string xoa = @"EXEC dbo.uspDeleteHoadon'" + txt_idhoadon.Text + "'";
-            DialogResult dialog = MessageBox.Show("Bạn có muốn xóa sách :" + txt_idhoadon.Text,
+            string xoa = @"EXEC dbo.uspDeleteHoadon N'" + txb_idhoadon.Text + "'";
+            DialogResult dialog = MessageBox.Show("Bạn có muốn xóa sách :" + txb_idhoadon.Text,
                 "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
@@ -90,14 +95,15 @@ namespace QLTiemLaptop
                     connect.executeQuery(xoa);
                     MessageBox.Show("Xóa thành công!!");
                     Load_Data();
-                    this.txt_idhoadon.Clear();
-                    this.txt_idkhach.Clear();
-                    this.txt_idnhanvien.Clear();
-                    this.txt_idlap.Clear();
-                    this.txt_soluong.Clear();
-                    this.txt_ngayban.Clear();
-                    this.txt_sdt.Clear();
-                    this.txt_dongia.Clear();
+                    this.txb_idhoadon.Clear();
+                    this.txb_idkhach.Clear();
+                    this.txb_idnhanvien.Clear();
+                    this.txb_idlap.Clear();
+                    this.txb_soluong.Clear();
+                    this.txb_ngayban.Clear();
+                    this.txb_sdt.Clear();
+                    this.txb_dongia.Clear();
+                    this.txb_tongtien.Clear();
                 }
                 catch (Exception)
                 {
@@ -110,9 +116,9 @@ namespace QLTiemLaptop
 
         private void btn_fix_Click(object sender, EventArgs e)
         {
-            string fix = @"exec dbo.uspFixHoadon N'" + txt_idhoadon.Text + "',N'" + txt_idlap.Text
-                + "',N'" + txt_idkhach.Text + "',N'" + txt_idnhanvien.Text + "','" + txt_soluong.Text +
-                "','" + txt_ngayban.Text + "','" + txt_dongia.Text + "',N'" + txt_sdt.Text + "'";
+            string fix = @"exec dbo.uspFixHoadon N'" + txb_idhoadon.Text + "',N'" + txb_idlap.Text
+                + "',N'" + txb_idkhach.Text + "',N'" + txb_idnhanvien.Text + "','" + txb_soluong.Text +
+                "','" + txb_ngayban.Text + "',N'" + txb_sdt.Text + "','" + txb_dongia.Text + "'";
             connect.executeQuery(fix);
             MessageBox.Show("Sữa thành công!!");
             Load_Data();

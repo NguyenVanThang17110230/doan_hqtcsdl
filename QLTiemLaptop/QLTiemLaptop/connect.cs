@@ -46,7 +46,7 @@ namespace QLLaptop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Lỗi SQLException: " + ex.Message);
+                MessageBox.Show("Lỗi dữ liệu:" + ex.Message);
                 return;
             }
 

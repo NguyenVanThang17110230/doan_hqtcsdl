@@ -16,7 +16,7 @@ namespace QLTiemLaptop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormChinh());
+            Application.Run(new frmNhanVien());
         }
     }
 }

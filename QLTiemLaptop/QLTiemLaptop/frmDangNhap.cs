@@ -12,9 +12,9 @@ using QLLaptop;
 
 namespace QLTiemLaptop
 {
-    public partial class Form1 : Form
+    public partial class frmDangNhap : Form
     {
-        public Form1()
+        public frmDangNhap()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace QLTiemLaptop
             {
                 MessageBox.Show("Xin chào " + txt_user.Text + "! Bạn đã đăng nhập thành công!", "Thông báo");
                 this.Hide();
-                Form main = new FormChinh();
+                Form main = new frmHoaDonBan();
                 main.ShowDialog();
                 this.Close();
             }
