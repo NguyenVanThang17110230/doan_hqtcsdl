@@ -29,10 +29,10 @@ namespace QLTiemLaptop
             DataTable dt = connect.getDataTable("select * from MyUser where id = N'" + txt_user.Text
                 + "' and password = N'" + txt_pass.Text + "'");
             if (dt.Rows.Count > 0)
-            {
+            {                               
                 MessageBox.Show("Xin chào " + txt_user.Text + "! Bạn đã đăng nhập thành công!", "Thông báo");
                 this.Hide();
-                Form main = new frmHoaDonBan();
+                Form main = new frmMain(dt.Rows[0][2].ToString());
                 main.ShowDialog();
                 this.Close();
             }
@@ -50,10 +50,6 @@ namespace QLTiemLaptop
             if (dialog == DialogResult.Yes)
                 Application.Exit();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

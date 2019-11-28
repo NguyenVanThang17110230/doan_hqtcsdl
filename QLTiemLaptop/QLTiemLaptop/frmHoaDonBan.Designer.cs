@@ -40,20 +40,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txb_sdt = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.txb_idnhanvien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.txb_dongia = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txb_idlap = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.txb_ngayban = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.txb_idkhach = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.txb_soluong = new System.Windows.Forms.TextBox();
@@ -66,6 +62,10 @@
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_clear = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbb_idkhach = new System.Windows.Forms.ComboBox();
+            this.cbb_idnv = new System.Windows.Forms.ComboBox();
+            this.cbb_idlap = new System.Windows.Forms.ComboBox();
+            this.dtp_ngayban = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -193,20 +193,12 @@
             // panel12
             // 
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.txb_idnhanvien);
+            this.panel12.Controls.Add(this.cbb_idlap);
             this.panel12.Controls.Add(this.label4);
             this.panel12.Location = new System.Drawing.Point(4, 59);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(294, 45);
             this.panel12.TabIndex = 8;
-            // 
-            // txb_idnhanvien
-            // 
-            this.txb_idnhanvien.Location = new System.Drawing.Point(136, 8);
-            this.txb_idnhanvien.Name = "txb_idnhanvien";
-            this.txb_idnhanvien.Size = new System.Drawing.Size(153, 22);
-            this.txb_idnhanvien.TabIndex = 5;
-            this.txb_idnhanvien.TextChanged += new System.EventHandler(this.txt_idnhanvien_TextChanged);
             // 
             // label4
             // 
@@ -249,7 +241,7 @@
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.label2);
-            this.panel8.Controls.Add(this.txb_idlap);
+            this.panel8.Controls.Add(this.cbb_idkhach);
             this.panel8.Location = new System.Drawing.Point(4, 110);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(294, 48);
@@ -259,25 +251,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(-1, 12);
+            this.label2.Location = new System.Drawing.Point(3, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 19);
             this.label2.TabIndex = 7;
             this.label2.Text = "Mã khách hàng";
             // 
-            // txb_idlap
-            // 
-            this.txb_idlap.Location = new System.Drawing.Point(136, 12);
-            this.txb_idlap.Name = "txb_idlap";
-            this.txb_idlap.Size = new System.Drawing.Size(153, 22);
-            this.txb_idlap.TabIndex = 4;
-            this.txb_idlap.TextChanged += new System.EventHandler(this.txt_idlap_TextChanged);
-            // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.dtp_ngayban);
             this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.txb_ngayban);
             this.panel7.Location = new System.Drawing.Point(319, 110);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(291, 48);
@@ -293,18 +277,11 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Ngày bán";
             // 
-            // txb_ngayban
-            // 
-            this.txb_ngayban.Location = new System.Drawing.Point(119, 9);
-            this.txb_ngayban.Name = "txb_ngayban";
-            this.txb_ngayban.Size = new System.Drawing.Size(167, 22);
-            this.txb_ngayban.TabIndex = 2;
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.cbb_idnv);
             this.panel5.Controls.Add(this.label3);
-            this.panel5.Controls.Add(this.txb_idkhach);
             this.panel5.Location = new System.Drawing.Point(319, 3);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(291, 50);
@@ -319,13 +296,6 @@
             this.label3.Size = new System.Drawing.Size(95, 19);
             this.label3.TabIndex = 8;
             this.label3.Text = "Mã nhân viên";
-            // 
-            // txb_idkhach
-            // 
-            this.txb_idkhach.Location = new System.Drawing.Point(119, 12);
-            this.txb_idkhach.Name = "txb_idkhach";
-            this.txb_idkhach.Size = new System.Drawing.Size(167, 22);
-            this.txb_idkhach.TabIndex = 1;
             // 
             // panel4
             // 
@@ -363,7 +333,7 @@
             this.dtgv_hoadon.RowTemplate.Height = 24;
             this.dtgv_hoadon.Size = new System.Drawing.Size(1137, 194);
             this.dtgv_hoadon.TabIndex = 1;
-            this.dtgv_hoadon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadon_CellContentClick);
+            this.dtgv_hoadon.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadon_CellClick);
             // 
             // panel2
             // 
@@ -449,6 +419,41 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hóa Đơn Bán";
             // 
+            // cbb_idkhach
+            // 
+            this.cbb_idkhach.FormattingEnabled = true;
+            this.cbb_idkhach.Location = new System.Drawing.Point(136, 9);
+            this.cbb_idkhach.Name = "cbb_idkhach";
+            this.cbb_idkhach.Size = new System.Drawing.Size(153, 24);
+            this.cbb_idkhach.TabIndex = 8;
+            // 
+            // cbb_idnv
+            // 
+            this.cbb_idnv.FormattingEnabled = true;
+            this.cbb_idnv.Location = new System.Drawing.Point(119, 14);
+            this.cbb_idnv.Name = "cbb_idnv";
+            this.cbb_idnv.Size = new System.Drawing.Size(166, 24);
+            this.cbb_idnv.TabIndex = 8;
+            // 
+            // cbb_idlap
+            // 
+            this.cbb_idlap.FormattingEnabled = true;
+            this.cbb_idlap.Location = new System.Drawing.Point(136, 11);
+            this.cbb_idlap.Name = "cbb_idlap";
+            this.cbb_idlap.Size = new System.Drawing.Size(153, 24);
+            this.cbb_idlap.TabIndex = 2;
+            // 
+            // dtp_ngayban
+            // 
+            this.dtp_ngayban.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_ngayban.CustomFormat = "yyyy/MM/dd";
+            this.dtp_ngayban.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_ngayban.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_ngayban.Location = new System.Drawing.Point(120, 11);
+            this.dtp_ngayban.Name = "dtp_ngayban";
+            this.dtp_ngayban.Size = new System.Drawing.Size(165, 22);
+            this.dtp_ngayban.TabIndex = 8;
+            // 
             // frmHoaDonBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -458,6 +463,7 @@
             this.Name = "frmHoaDonBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form Hóa Đơn Bán";
+            this.Load += new System.EventHandler(this.frmHoaDonBan_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -498,20 +504,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txb_sdt;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox txb_idnhanvien;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txb_dongia;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txb_idlap;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txb_ngayban;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txb_idkhach;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txb_soluong;
@@ -524,5 +526,9 @@
         private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_clear;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cbb_idkhach;
+        private System.Windows.Forms.ComboBox cbb_idnv;
+        private System.Windows.Forms.DateTimePicker dtp_ngayban;
+        private System.Windows.Forms.ComboBox cbb_idlap;
     }
 }

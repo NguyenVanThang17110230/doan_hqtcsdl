@@ -13,12 +13,17 @@ namespace QLTiemLaptop
 {
     public partial class frmHoaDonNhap : Form
     {
+        string PhanQuyen="";
         public frmHoaDonNhap()
         {
             InitializeComponent();
             Load_data();
         }
-        
+        public frmHoaDonNhap(string PhanQuyen)
+        {
+            InitializeComponent();
+            this.PhanQuyen = PhanQuyen;
+        }
         public void Load_data()
         {
             string str = "select * from HoaDonNhap";
@@ -27,25 +32,7 @@ namespace QLTiemLaptop
             dtgv_hoadonnhap.AutoResizeColumns();
         }
 
-        private void dtgv_hoadonnhap_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                DataGridViewRow row = new DataGridViewRow();
-                row = dtgv_hoadonnhap.Rows[e.RowIndex];
-                txb_idhoadonnhap.Text = row.Cells[0].Value.ToString();
-                txb_idnhanviennhap.Text = row.Cells[1].Value.ToString();
-                txb_idnhacungcapnhap.Text = row.Cells[2].Value.ToString();               
-                txb_idlapnhap.Text = row.Cells[3].Value.ToString();
-                cbb_tenlapnhap.Text = row.Cells[4].Value.ToString();
-                txb_soluongnhap.Text = row.Cells[5].Value.ToString();
-                txb_ngaynhap.Text = row.Cells[6].Value.ToString();
-                txb_dongianhap.Text = row.Cells[7].Value.ToString();
-                txb_tongtiennhap.Text = row.Cells[8].Value.ToString();
-            }
-            catch (Exception) { }
-
-        }
+        
 
         private void btn_clearnhap_Click(object sender, EventArgs e)
         {
@@ -100,35 +87,35 @@ namespace QLTiemLaptop
         }
 
         private void btn_deletnhap_Click(object sender, EventArgs e)
-        {
-            string xoa = @"EXEC dbo.uspDeletehoadonnhap N'" + txb_idhoadonnhap.Text + "'";
-            DialogResult dialog = MessageBox.Show("Bạn có muốn xóa sách :" + txb_idhoadonnhap.Text,
-                "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
-            {
-                try
+        {  
+                string xoa = @"EXEC dbo.uspDeletehoadonnhap N'" + txb_idhoadonnhap.Text + "'";
+                DialogResult dialog = MessageBox.Show("Bạn có muốn xóa sách :" + txb_idhoadonnhap.Text,
+                    "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialog == DialogResult.Yes)
                 {
-                    connect.executeQuery(xoa);
-                    MessageBox.Show("Xóa thành công!!");
-                    Load_data();
-                    this.txb_idhoadonnhap.Clear();
-                    this.txb_idnhacungcapnhap.Clear();
-                    this.txb_idnhanviennhap.Clear();
-                    this.txb_idlapnhap.Clear();
-                    cbb_tenlapnhap.Text = "";
-                    this.txb_soluongnhap.Clear();
-                    this.txb_ngaynhap.Clear();
-                    this.txb_dongianhap.Clear();
-                    this.txb_tongtiennhap.Clear();
+                    try
+                    {
+                        connect.executeQuery(xoa);
+                        MessageBox.Show("Xóa thành công!!");
+                        Load_data();
+                        this.txb_idhoadonnhap.Clear();
+                        this.txb_idnhacungcapnhap.Clear();
+                        this.txb_idnhanviennhap.Clear();
+                        this.txb_idlapnhap.Clear();
+                        cbb_tenlapnhap.Text = "";
+                        this.txb_soluongnhap.Clear();
+                        this.txb_ngaynhap.Clear();
+                        this.txb_dongianhap.Clear();
+                        this.txb_tongtiennhap.Clear();
+                    }
+                    catch (Exception)
+                    {
+                    }
                 }
-                catch (Exception)
+                else if (dialog == DialogResult.No)
                 {
                 }
-            }
-            else if (dialog == DialogResult.No)
-            {
-            }
-
+                  
         }
 
         private void btn_innhap_Click(object sender, EventArgs e)
@@ -140,8 +127,32 @@ namespace QLTiemLaptop
         {
             DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
-                Application.Exit();
+            {
+                this.Hide();
+                Form main = new frmMain();
+                main.ShowDialog();
+                this.Close();
+            }
 
+        }
+
+        private void dtgv_hoadonnhap_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                row = dtgv_hoadonnhap.Rows[e.RowIndex];
+                txb_idhoadonnhap.Text = row.Cells[0].Value.ToString();
+                txb_idnhanviennhap.Text = row.Cells[1].Value.ToString();
+                txb_idnhacungcapnhap.Text = row.Cells[2].Value.ToString();               
+                txb_idlapnhap.Text = row.Cells[3].Value.ToString();
+                cbb_tenlapnhap.Text = row.Cells[4].Value.ToString();
+                txb_soluongnhap.Text = row.Cells[5].Value.ToString();
+                txb_ngaynhap.Text = row.Cells[6].Value.ToString();
+                txb_dongianhap.Text = row.Cells[7].Value.ToString();
+                txb_tongtiennhap.Text = row.Cells[8].Value.ToString();
+            }
+            catch (Exception) { }
         }
     }
 }

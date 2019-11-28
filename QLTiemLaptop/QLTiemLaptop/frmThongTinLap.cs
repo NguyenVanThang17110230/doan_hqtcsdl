@@ -141,5 +141,17 @@ namespace QLTiemLaptop
             txb_dongiaa.Text = row.Cells[5].Value.ToString();
             txb_thongtin.Text = row.Cells[6].Value.ToString();
         }
+
+        private void btn_exitttl_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Hide();
+                Form main = new frmMain();
+                main.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }

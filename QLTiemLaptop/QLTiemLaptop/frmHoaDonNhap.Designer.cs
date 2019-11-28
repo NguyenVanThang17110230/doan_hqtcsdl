@@ -38,6 +38,9 @@
             this.btn_fixnhap = new System.Windows.Forms.Button();
             this.btn_deletnhap = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.cbb_tenlapnhap = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txb_idnhanviennhap = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,13 +65,11 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txb_idhoadonnhap = new System.Windows.Forms.TextBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.cbb_tenlapnhap = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadonnhap)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -77,7 +78,6 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -102,7 +102,8 @@
             this.dtgv_hoadonnhap.RowTemplate.Height = 24;
             this.dtgv_hoadonnhap.Size = new System.Drawing.Size(1295, 251);
             this.dtgv_hoadonnhap.TabIndex = 2;
-            this.dtgv_hoadonnhap.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadonnhap_CellContentClick);
+            this.dtgv_hoadonnhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadonnhap_CellClick);
+            
             // 
             // panel2
             // 
@@ -194,6 +195,33 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1295, 241);
             this.panel1.TabIndex = 0;
+            // 
+            // panel11
+            // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel11.Controls.Add(this.cbb_tenlapnhap);
+            this.panel11.Controls.Add(this.label9);
+            this.panel11.Location = new System.Drawing.Point(452, 96);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(365, 56);
+            this.panel11.TabIndex = 1;
+            // 
+            // cbb_tenlapnhap
+            // 
+            this.cbb_tenlapnhap.FormattingEnabled = true;
+            this.cbb_tenlapnhap.Location = new System.Drawing.Point(120, 17);
+            this.cbb_tenlapnhap.Name = "cbb_tenlapnhap";
+            this.cbb_tenlapnhap.Size = new System.Drawing.Size(240, 25);
+            this.cbb_tenlapnhap.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(3, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Tên laptop";
             // 
             // panel4
             // 
@@ -404,33 +432,6 @@
             this.txb_idhoadonnhap.Size = new System.Drawing.Size(209, 25);
             this.txb_idhoadonnhap.TabIndex = 1;
             // 
-            // panel11
-            // 
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.cbb_tenlapnhap);
-            this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(452, 96);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(365, 56);
-            this.panel11.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 17);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Tên laptop";
-            // 
-            // cbb_tenlapnhap
-            // 
-            this.cbb_tenlapnhap.FormattingEnabled = true;
-            this.cbb_tenlapnhap.Location = new System.Drawing.Point(120, 17);
-            this.cbb_tenlapnhap.Name = "cbb_tenlapnhap";
-            this.cbb_tenlapnhap.Size = new System.Drawing.Size(240, 25);
-            this.cbb_tenlapnhap.TabIndex = 1;
-            // 
             // frmHoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -443,6 +444,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadonnhap)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -459,8 +462,6 @@
             this.panel10.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }

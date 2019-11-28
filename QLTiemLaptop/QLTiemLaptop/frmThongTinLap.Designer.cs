@@ -58,6 +58,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.txb_idlapp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_exitttl = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_thongtinlap)).BeginInit();
@@ -86,6 +87,7 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.btn_exitttl);
             this.panel5.Controls.Add(this.btn_clearttl);
             this.panel5.Controls.Add(this.btn_inttl);
             this.panel5.Controls.Add(this.btn_addttl);
@@ -100,7 +102,7 @@
             // 
             this.btn_clearttl.Location = new System.Drawing.Point(11, 3);
             this.btn_clearttl.Name = "btn_clearttl";
-            this.btn_clearttl.Size = new System.Drawing.Size(164, 39);
+            this.btn_clearttl.Size = new System.Drawing.Size(144, 39);
             this.btn_clearttl.TabIndex = 2;
             this.btn_clearttl.Text = "Làm mới";
             this.btn_clearttl.UseVisualStyleBackColor = true;
@@ -108,9 +110,9 @@
             // 
             // btn_inttl
             // 
-            this.btn_inttl.Location = new System.Drawing.Point(938, 3);
+            this.btn_inttl.Location = new System.Drawing.Point(775, 3);
             this.btn_inttl.Name = "btn_inttl";
-            this.btn_inttl.Size = new System.Drawing.Size(163, 39);
+            this.btn_inttl.Size = new System.Drawing.Size(138, 39);
             this.btn_inttl.TabIndex = 6;
             this.btn_inttl.Text = "In";
             this.btn_inttl.UseVisualStyleBackColor = true;
@@ -118,9 +120,9 @@
             // 
             // btn_addttl
             // 
-            this.btn_addttl.Location = new System.Drawing.Point(244, 3);
+            this.btn_addttl.Location = new System.Drawing.Point(199, 3);
             this.btn_addttl.Name = "btn_addttl";
-            this.btn_addttl.Size = new System.Drawing.Size(163, 39);
+            this.btn_addttl.Size = new System.Drawing.Size(140, 39);
             this.btn_addttl.TabIndex = 3;
             this.btn_addttl.Text = "Thêm";
             this.btn_addttl.UseVisualStyleBackColor = true;
@@ -128,9 +130,9 @@
             // 
             // btn_deletttn
             // 
-            this.btn_deletttn.Location = new System.Drawing.Point(705, 3);
+            this.btn_deletttn.Location = new System.Drawing.Point(581, 3);
             this.btn_deletttn.Name = "btn_deletttn";
-            this.btn_deletttn.Size = new System.Drawing.Size(163, 39);
+            this.btn_deletttn.Size = new System.Drawing.Size(139, 39);
             this.btn_deletttn.TabIndex = 5;
             this.btn_deletttn.Text = "Xóa";
             this.btn_deletttn.UseVisualStyleBackColor = true;
@@ -138,9 +140,9 @@
             // 
             // btn_fixttl
             // 
-            this.btn_fixttl.Location = new System.Drawing.Point(474, 3);
+            this.btn_fixttl.Location = new System.Drawing.Point(386, 3);
             this.btn_fixttl.Name = "btn_fixttl";
-            this.btn_fixttl.Size = new System.Drawing.Size(163, 39);
+            this.btn_fixttl.Size = new System.Drawing.Size(137, 39);
             this.btn_fixttl.TabIndex = 4;
             this.btn_fixttl.Text = "Sửa";
             this.btn_fixttl.UseVisualStyleBackColor = true;
@@ -367,6 +369,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã laptop";
             // 
+            // btn_exitttl
+            // 
+            this.btn_exitttl.Location = new System.Drawing.Point(974, 3);
+            this.btn_exitttl.Name = "btn_exitttl";
+            this.btn_exitttl.Size = new System.Drawing.Size(131, 39);
+            this.btn_exitttl.TabIndex = 7;
+            this.btn_exitttl.Text = "Thoát";
+            this.btn_exitttl.UseVisualStyleBackColor = true;
+            this.btn_exitttl.Click += new System.EventHandler(this.btn_exitttl_Click);
+            // 
             // frmThongTinLap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -430,5 +442,6 @@
         private System.Windows.Forms.Button btn_deletttn;
         private System.Windows.Forms.Button btn_fixttl;
         private System.Windows.Forms.Button btn_inttl;
+        private System.Windows.Forms.Button btn_exitttl;
     }
 }

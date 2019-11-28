@@ -93,7 +93,7 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // Form1
+            // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,10 +104,9 @@
             this.Controls.Add(this.lbl_user);
             this.Controls.Add(this.txt_pass);
             this.Controls.Add(this.txt_user);
-            this.Name = "Form1";
+            this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Đăng nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 
