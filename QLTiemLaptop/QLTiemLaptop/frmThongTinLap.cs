@@ -25,7 +25,7 @@ namespace QLTiemLaptop
             string str = "select IDNhaCC from NhaCC";
             cbb_idnhacc.DisplayMember = "IDNhaCC";
             cbb_idnhacc.DataSource = connect.getDataTable(str);
-
+            this.cbb_tennhacc.SelectedIndex = -1;
         }
         
         public void Load_thongtinlap()
@@ -34,11 +34,22 @@ namespace QLTiemLaptop
             DataTable dt = connect.getDataTable(ttl);
             dtgv_thongtinlap.DataSource=dt;
         }
+        public void Load_cbb_idnhomlap()
+        {
+            string idnhomlap = "select * from NhomLap";
+            cbb_idnhomlap.DisplayMember = "TenNhomLap";
+            cbb_idnhomlap.ValueMember = "IDNhomLap";
+            cbb_idnhomlap.DataSource = connect.getDataTable(idnhomlap);
+        }
 
         private void frmThongTinLap_Load(object sender, EventArgs e)
         {
             this.Load_cbb_idncc();
             this.Load_thongtinlap();
+            this.Load_cbb_idnhomlap();
+            this.cbb_idnhomlap.SelectedIndex = -1;
+            this.cbb_idnhacc.SelectedIndex = -1;
+            
         }
 
         private void btn_clearttl_Click(object sender, EventArgs e)
@@ -47,6 +58,7 @@ namespace QLTiemLaptop
             this.txb_tenlapp.Clear();
             cbb_idnhacc.Text = "";
             cbb_tennhacc.Text = "";
+            cbb_idnhomlap.Text = "";
             this.txb_soluongg.Clear();
             this.txb_dongiaa.Clear();
             this.txb_thongtin.Clear();
@@ -56,7 +68,7 @@ namespace QLTiemLaptop
         private void btn_addttl_Click(object sender, EventArgs e)
         {
             string them= @"exec dbo.uspInsertthongtinlap N'" + txb_idlapp.Text + "',N'" + txb_tenlapp.Text
-                + "',N'" + cbb_idnhacc.Text + "',N'" + cbb_tennhacc.Text + "','" + txb_soluongg.Text
+                + "',N'" + cbb_idnhomlap.SelectedValue.ToString() + "',N'" + cbb_idnhacc.Text + "',N'" + cbb_tennhacc.Text + "','" + txb_soluongg.Text
                 + "','" + txb_dongiaa.Text + "',N'" + txb_thongtin.Text + "'";
             connect.executeQuery(them);
             Load_thongtinlap();
@@ -65,7 +77,7 @@ namespace QLTiemLaptop
         private void btn_fixttl_Click(object sender, EventArgs e)
         {
             string fixttl = @"exec dbo.uspFixthongtinlap N'" + txb_idlapp.Text + "',N'" + txb_tenlapp.Text 
-                + "',N'" + cbb_idnhacc.Text + "',N'"+cbb_tennhacc.Text +"','"+txb_soluongg.Text
+                + "',N'" + cbb_idnhomlap.SelectedValue.ToString() + "',N'" + cbb_idnhacc.Text + "',N'"+cbb_tennhacc.Text +"','"+txb_soluongg.Text
                 +"','"+txb_dongiaa.Text+"',N'"+txb_thongtin.Text+"'";
             DialogResult dialog = MessageBox.Show("Bạn có chắc muốn sửa thông tin lap", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(dialog==DialogResult.Yes)
@@ -76,6 +88,7 @@ namespace QLTiemLaptop
                 this.txb_tenlapp.Clear();
                 cbb_idnhacc.Text = "";
                 cbb_tennhacc.Text = "";
+                cbb_idnhomlap.Text = "";
                 this.txb_soluongg.Clear();
                 this.txb_dongiaa.Clear();
                 this.txb_thongtin.Clear();
@@ -99,6 +112,7 @@ namespace QLTiemLaptop
                 this.txb_soluongg.Clear();
                 this.txb_dongiaa.Clear();
                 this.txb_thongtin.Clear();
+                cbb_idnhomlap.Text = "";
             }
 
         }
@@ -106,22 +120,7 @@ namespace QLTiemLaptop
         private void btn_inttl_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void dtgv_thongtinlap_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow row = new DataGridViewRow();
-            row = dtgv_thongtinlap.Rows[e.RowIndex];
-            txb_idlapp.Text = row.Cells[0].Value.ToString();
-            txb_tenlapp.Text = row.Cells[1].Value.ToString();
-            cbb_idnhacc.Text = row.Cells[2].Value.ToString();
-            cbb_tennhacc.Text = row.Cells[3].Value.ToString();
-            txb_soluongg.Text = row.Cells[4].Value.ToString();
-            txb_dongiaa.Text = row.Cells[5].Value.ToString();
-            txb_thongtin.Text = row.Cells[6].Value.ToString();
-            
-        }
-
+        }        
         private void cbb_idnhacc_SelectedIndexChanged(object sender, EventArgs e)
         {
             string strt = "select TenNhaCC from NhaCC where IDNhaCC='" + cbb_idnhacc.Text + "'";
@@ -135,23 +134,12 @@ namespace QLTiemLaptop
             row = dtgv_thongtinlap.Rows[e.RowIndex];
             txb_idlapp.Text = row.Cells[0].Value.ToString();
             txb_tenlapp.Text = row.Cells[1].Value.ToString();
-            cbb_idnhacc.Text = row.Cells[2].Value.ToString();
-            cbb_tennhacc.Text = row.Cells[3].Value.ToString();
-            txb_soluongg.Text = row.Cells[4].Value.ToString();
-            txb_dongiaa.Text = row.Cells[5].Value.ToString();
-            txb_thongtin.Text = row.Cells[6].Value.ToString();
-        }
-
-        private void btn_exitttl_Click(object sender, EventArgs e)
-        {
-            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
-            {
-                this.Hide();
-                Form main = new frmMain();
-                main.ShowDialog();
-                this.Close();
-            }
-        }
+            cbb_idnhomlap.Text = row.Cells[2].Value.ToString();
+            cbb_idnhacc.Text = row.Cells[3].Value.ToString();
+            cbb_tennhacc.Text = row.Cells[4].Value.ToString();
+            txb_soluongg.Text = row.Cells[5].Value.ToString();
+            txb_dongiaa.Text = row.Cells[6].Value.ToString();
+            txb_thongtin.Text = row.Cells[7].Value.ToString();
+        }        
     }
 }

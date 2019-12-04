@@ -16,3 +16,7 @@ C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x6
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmThongTinLap.resources
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmThongTinKhuyenMai.resources
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmHoaDonTraGop.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmThongKeHoaDonBan.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmThongKeHoaDonNhap.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmThongKeTraGop.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmLuongNhanVien.resources

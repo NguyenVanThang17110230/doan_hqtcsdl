@@ -50,6 +50,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txb_nhacungccap = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txb_searchncc = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.txb_searchname = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_nhacungcap)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -57,16 +61,17 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtgv_nhacungcap
             // 
             this.dtgv_nhacungcap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_nhacungcap.Location = new System.Drawing.Point(443, 12);
+            this.dtgv_nhacungcap.Location = new System.Drawing.Point(443, 65);
             this.dtgv_nhacungcap.Name = "dtgv_nhacungcap";
             this.dtgv_nhacungcap.RowHeadersWidth = 51;
             this.dtgv_nhacungcap.RowTemplate.Height = 24;
-            this.dtgv_nhacungcap.Size = new System.Drawing.Size(565, 506);
+            this.dtgv_nhacungcap.Size = new System.Drawing.Size(565, 453);
             this.dtgv_nhacungcap.TabIndex = 0;
             this.dtgv_nhacungcap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_nhacungcap_CellClick);
             // 
@@ -173,7 +178,7 @@
             this.txb_sdt.Location = new System.Drawing.Point(6, 47);
             this.txb_sdt.Name = "txb_sdt";
             this.txb_sdt.Size = new System.Drawing.Size(220, 22);
-            this.txb_sdt.TabIndex = 5;
+            this.txb_sdt.TabIndex = 4;
             // 
             // label4
             // 
@@ -199,7 +204,7 @@
             this.txb_tennhacungcap.Location = new System.Drawing.Point(6, 45);
             this.txb_tennhacungcap.Name = "txb_tennhacungcap";
             this.txb_tennhacungcap.Size = new System.Drawing.Size(220, 22);
-            this.txb_tennhacungcap.TabIndex = 3;
+            this.txb_tennhacungcap.TabIndex = 2;
             // 
             // label2
             // 
@@ -225,7 +230,7 @@
             this.txb_diachi.Location = new System.Drawing.Point(6, 49);
             this.txb_diachi.Name = "txb_diachi";
             this.txb_diachi.Size = new System.Drawing.Size(220, 22);
-            this.txb_diachi.TabIndex = 4;
+            this.txb_diachi.TabIndex = 3;
             // 
             // label3
             // 
@@ -260,13 +265,50 @@
             this.txb_nhacungccap.Location = new System.Drawing.Point(6, 45);
             this.txb_nhacungccap.Name = "txb_nhacungccap";
             this.txb_nhacungccap.Size = new System.Drawing.Size(220, 22);
-            this.txb_nhacungccap.TabIndex = 2;
+            this.txb_nhacungccap.TabIndex = 1;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 12);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Tìm kiếm:";
+            // 
+            // txb_searchncc
+            // 
+            this.txb_searchncc.Location = new System.Drawing.Point(96, 9);
+            this.txb_searchncc.Name = "txb_searchncc";
+            this.txb_searchncc.Size = new System.Drawing.Size(94, 22);
+            this.txb_searchncc.TabIndex = 2;
+            this.txb_searchncc.TextChanged += new System.EventHandler(this.txb_searchncc_TextChanged);
+            // 
+            // panel7
+            // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel7.Controls.Add(this.txb_searchname);
+            this.panel7.Controls.Add(this.txb_searchncc);
+            this.panel7.Controls.Add(this.label6);
+            this.panel7.Location = new System.Drawing.Point(443, 16);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(565, 43);
+            this.panel7.TabIndex = 3;
+            // 
+            // txb_searchname
+            // 
+            this.txb_searchname.Location = new System.Drawing.Point(207, 9);
+            this.txb_searchname.Name = "txb_searchname";
+            this.txb_searchname.Size = new System.Drawing.Size(334, 22);
+            this.txb_searchname.TabIndex = 3;
+            this.txb_searchname.TextChanged += new System.EventHandler(this.txb_searchname_TextChanged);
             // 
             // frmNhaCungCap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1020, 530);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtgv_nhacungcap);
             this.Name = "frmNhaCungCap";
@@ -284,6 +326,8 @@
             this.panel4.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -311,5 +355,9 @@
         private System.Windows.Forms.Button btn_exitncc;
         private System.Windows.Forms.Button btn_deletencc;
         private System.Windows.Forms.Button btn_fixncc;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txb_searchncc;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox txb_searchname;
     }
 }

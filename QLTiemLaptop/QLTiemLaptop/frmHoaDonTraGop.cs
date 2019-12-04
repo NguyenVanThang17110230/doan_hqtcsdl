@@ -35,22 +35,25 @@ namespace QLTiemLaptop
         }
         public void Load_cbb_idlap()
         {
-            string idlap = "select IDLap from ThongTinLap";
-            cbb_idlaptg.DisplayMember = "IDLap";
+            string idlap = "select * from ThongTinLap";
+            cbb_idlaptg.DisplayMember = "TenLap";
+            cbb_idlaptg.ValueMember = "IDLap";
             cbb_idlaptg.DataSource = connect.getDataTable(idlap);
             cbb_idlaptg.SelectedIndex = -1;
         }
         public void Load_cbb_idnv()
         {
-            string idnv = "select IDNhanVien from NhanVien";
-            cbb_idnv.DisplayMember = "IDNhanVien";
+            string idnv = "select * from NhanVien";
+            cbb_idnv.DisplayMember = "TenNhanVien";
+            cbb_idnv.ValueMember = "IDNhanVien";
             cbb_idnv.DataSource = connect.getDataTable(idnv);
             cbb_idnv.SelectedIndex = -1;
         }
         public void Load_cbb_idkh()
         {
-            string idkh = "select IDKhachHang from KhachHang";
-            cbb_idkh.DisplayMember = "IDKhachHang";
+            string idkh = "select * from KhachHang";
+            cbb_idkh.DisplayMember = "TenKhachHang";
+            cbb_idkh.ValueMember = "IDKhachHang";
             cbb_idkh.DataSource = connect.getDataTable(idkh);
             cbb_idkh.SelectedIndex = -1;
         }
@@ -68,15 +71,11 @@ namespace QLTiemLaptop
                 cbb_idlaptg.Text = row.Cells[1].Value.ToString();
                 cbb_idnv.Text = row.Cells[2].Value.ToString();
                 cbb_idkh.Text = row.Cells[3].Value.ToString();
-                txb_cmnd.Text = row.Cells[4].Value.ToString();
-                txb_soluongtg.Text = row.Cells[5].Value.ToString();
-                txb_dongiatg.Text = row.Cells[6].Value.ToString();
+                txb_cmnd.Text = row.Cells[4].Value.ToString();                
                 txb_tongtientg.Text = row.Cells[7].Value.ToString();
-                dtp_ngaybantg.Text = row.Cells[8].Value.ToString();
-                cbb_hantg.Text = row.Cells[9].Value.ToString();
-                txb_thanhtoantrc.Text = row.Cells[10].Value.ToString();
-                txb_tienphaitra.Text = row.Cells[11].Value.ToString();
-
+                dtp_ngaybantg.Text = row.Cells[5].Value.ToString();
+                cbb_hantg.Text = row.Cells[6].Value.ToString();
+                txb_thanhtoantrc.Text = row.Cells[8].Value.ToString();                
             }
             catch (Exception)
             {
@@ -90,32 +89,96 @@ namespace QLTiemLaptop
             {
                 if (cbb_idlaptg.Text == "")
                 {
-                    txb_dongiatg.Text = "";
+                    txb_tongtientg.Text = "";
                 }
                 else
                 {
-                    string dongia = "select DonGia from ThongTinLap where IDLap=N'" + cbb_idlaptg.Text + "'";
+                    string dongia = "select DonGia from ThongTinLap where TenLap=N'" + cbb_idlaptg.Text + "'";
                     DataTable dt = connect.getDataTable(dongia);
-                    txb_dongiatg.Text = dt.Rows[0][0].ToString();
+                    txb_tongtientg.Text = dt.Rows[0][0].ToString();
                 }
             }
             catch (Exception) { MessageBox.Show("lỗi"); }            
             
         }
-
-        private void txb_dongiatg_TextChanged(object sender, EventArgs e)
+       
+        private void btn_cleartg_Click(object sender, EventArgs e)
         {
-            try 
+            this.txb_idhoadontg.Text = "";
+            this.cbb_idlaptg.Text = "";
+            this.cbb_idnv.Text = "";
+            this.cbb_idkh.Text = "";
+            this.txb_cmnd.Text = "";
+            this.dtp_ngaybantg.Text = "";
+            this.cbb_hantg.Text = "";
+            this.txb_tongtientg.Text = "";           
+            this.txb_thanhtoantrc.Text = "";
+            
+        }
+
+        private void btn_addtg_Click(object sender, EventArgs e)
+        {
+            string add = @"exec dbo.uspInserthoadontg N'" + txb_idhoadontg.Text + "',N'" + cbb_idlaptg.SelectedValue.ToString()
+                + "',N'" + cbb_idnv.SelectedValue.ToString() + "',N'" + cbb_idkh.SelectedValue.ToString() + "','" + txb_cmnd.Text
+                + "','" + dtp_ngaybantg.Text + "','" + cbb_hantg.Text + "','" + txb_tongtientg.Text + "','" + txb_thanhtoantrc.Text
+                + "','" + "" + "','" + "" + "'";
+            connect.executeQuery(add);
+            Load_datatg();
+        }
+
+        private void btn_fixtg_Click(object sender, EventArgs e)
+        {
+            string fix = @"exec dbo.uspFixhoadontg N'" + txb_idhoadontg.Text + "',N'" + cbb_idlaptg.SelectedValue.ToString()
+                + "',N'" + cbb_idnv.SelectedValue.ToString() + "',N'" + cbb_idkh.SelectedValue.ToString() + "','" + txb_cmnd.Text
+                + "','" + dtp_ngaybantg.Text + "','" + cbb_hantg.Text + "','" + txb_tongtientg.Text + "','" + txb_thanhtoantrc.Text
+                + "','" + "" + "','" + "" + "'";
+            DialogResult dialog = MessageBox.Show("Bạn có chắc muốn sửa hóa đơn", "thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
             {
-                if(txb_soluongtg.Text=="" && txb_dongiatg.Text=="")
+                try
                 {
-                    txb_tongtientg.Text = "";
+                    connect.executeQuery(fix);
+                    Load_datatg();
                 }
-                else
+                catch (Exception)
                 {
+                    MessageBox.Show("Sửa không được!!!");
                 }
             }
-            catch (Exception) { }
+        }
+
+        private void btn_deletetg_Click(object sender, EventArgs e)
+        {
+            string delete = @"exec dbo.uspDeletehoadontg N'" + txb_idhoadontg.Text + "'";
+            DialogResult dialog = MessageBox.Show("Bạn có chắc muốn xóa!!", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                try
+                {
+                    connect.executeQuery(delete);
+                    Load_datatg();
+                    this.txb_idhoadontg.Text = "";
+                    this.cbb_idlaptg.Text = "";
+                    this.cbb_idnv.Text = "";
+                    this.cbb_idkh.Text = "";
+                    this.txb_cmnd.Text = "";
+                    this.dtp_ngaybantg.Text = "";
+                    this.cbb_hantg.Text = "";
+                    this.txb_tongtientg.Text = "";
+                    this.txb_thanhtoantrc.Text = "";
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Không xóa được!!");
+                }
+
+
+            }
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

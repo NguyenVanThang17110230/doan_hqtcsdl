@@ -21,6 +21,7 @@ namespace QLTiemLaptop
 
         private void frmNhaCungCap_Load(object sender, EventArgs e)
         {
+            txb_nhacungccap.Focus();
             Load_datancc();
         }
         public void Load_datancc()
@@ -118,6 +119,20 @@ namespace QLTiemLaptop
                 
             
             
+        }
+
+        private void txb_searchncc_TextChanged(object sender, EventArgs e)
+        {
+            string searchid = @"exec dbo.Searchnhacungcap N'" + txb_searchncc.Text + "'";            
+            DataTable dt = connect.getDataTable(searchid);            
+            dtgv_nhacungcap.DataSource = dt;            
+        }
+
+        private void txb_searchname_TextChanged(object sender, EventArgs e)
+        {
+            string searchname = @"exec dbo.Searchnhacungcap2 N'" + txb_searchname.Text + "'";
+            DataTable dt2 = connect.getDataTable(searchname);
+            dtgv_nhacungcap.DataSource = dt2;
         }
     }
 }

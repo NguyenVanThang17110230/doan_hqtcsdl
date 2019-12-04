@@ -35,9 +35,10 @@ namespace QLLaptop
         public static void executeQuery(String sql)
         {
             cmd = new SqlCommand();
-            openConnection();
+            //openConnection();
             try
             {
+                cnn.Open();
                 cmd.Connection = cnn;
                 cmd.CommandText = sql;
                 cmd.CommandType = CommandType.Text;
@@ -46,7 +47,7 @@ namespace QLLaptop
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Lỗi dữ liệu:" + ex.Message);
+                MessageBox.Show("" + ex.Message);
                 return;
             }
 
