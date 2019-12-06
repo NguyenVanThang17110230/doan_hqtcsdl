@@ -30,7 +30,6 @@
         {
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_clearttl = new System.Windows.Forms.Button();
-            this.btn_inttl = new System.Windows.Forms.Button();
             this.btn_addttl = new System.Windows.Forms.Button();
             this.btn_deletttn = new System.Windows.Forms.Button();
             this.btn_fixttl = new System.Windows.Forms.Button();
@@ -57,18 +56,18 @@
             this.txb_idlapp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.cbb_idnhomlap = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txb_searchid = new System.Windows.Forms.TextBox();
-            this.txb_searchnhom = new System.Windows.Forms.TextBox();
             this.txb_searchname = new System.Windows.Forms.TextBox();
+            this.txb_searchnhom = new System.Windows.Forms.TextBox();
+            this.txb_searchid = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_thongtinlap)).BeginInit();
             this.panel9.SuspendLayout();
@@ -87,13 +86,12 @@
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.btn_clearttl);
-            this.panel5.Controls.Add(this.btn_inttl);
             this.panel5.Controls.Add(this.btn_addttl);
             this.panel5.Controls.Add(this.btn_deletttn);
             this.panel5.Controls.Add(this.btn_fixttl);
-            this.panel5.Location = new System.Drawing.Point(11, 559);
+            this.panel5.Location = new System.Drawing.Point(393, 559);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1120, 47);
+            this.panel5.Size = new System.Drawing.Size(738, 47);
             this.panel5.TabIndex = 1;
             // 
             // btn_clearttl
@@ -105,16 +103,6 @@
             this.btn_clearttl.Text = "Làm mới";
             this.btn_clearttl.UseVisualStyleBackColor = true;
             this.btn_clearttl.Click += new System.EventHandler(this.btn_clearttl_Click);
-            // 
-            // btn_inttl
-            // 
-            this.btn_inttl.Location = new System.Drawing.Point(775, 3);
-            this.btn_inttl.Name = "btn_inttl";
-            this.btn_inttl.Size = new System.Drawing.Size(138, 39);
-            this.btn_inttl.TabIndex = 6;
-            this.btn_inttl.Text = "In";
-            this.btn_inttl.UseVisualStyleBackColor = true;
-            this.btn_inttl.Click += new System.EventHandler(this.btn_inttl_Click);
             // 
             // btn_addttl
             // 
@@ -156,7 +144,6 @@
             this.dtgv_thongtinlap.Size = new System.Drawing.Size(1120, 451);
             this.dtgv_thongtinlap.TabIndex = 0;
             this.dtgv_thongtinlap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_thongtinlap_CellClick);
-            
             // 
             // panel9
             // 
@@ -355,6 +342,23 @@
             this.panel1.Size = new System.Drawing.Size(380, 53);
             this.panel1.TabIndex = 8;
             // 
+            // cbb_idnhomlap
+            // 
+            this.cbb_idnhomlap.FormattingEnabled = true;
+            this.cbb_idnhomlap.Location = new System.Drawing.Point(135, 12);
+            this.cbb_idnhomlap.Name = "cbb_idnhomlap";
+            this.cbb_idnhomlap.Size = new System.Drawing.Size(240, 24);
+            this.cbb_idnhomlap.TabIndex = 1;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 12);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(89, 17);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Mã nhóm lap";
+            // 
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -370,23 +374,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(392, 592);
             this.panel10.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 12);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 17);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Mã nhóm lap";
-            // 
-            // cbb_idnhomlap
-            // 
-            this.cbb_idnhomlap.FormattingEnabled = true;
-            this.cbb_idnhomlap.Location = new System.Drawing.Point(135, 12);
-            this.cbb_idnhomlap.Name = "cbb_idnhomlap";
-            this.cbb_idnhomlap.Size = new System.Drawing.Size(240, 24);
-            this.cbb_idnhomlap.TabIndex = 1;
             // 
             // label9
             // 
@@ -414,34 +401,26 @@
             this.panel11.Size = new System.Drawing.Size(567, 82);
             this.panel11.TabIndex = 11;
             // 
-            // label10
+            // txb_searchname
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(3, 12);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(86, 17);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "TÌM KIẾM";
+            this.txb_searchname.Location = new System.Drawing.Point(400, 48);
+            this.txb_searchname.Name = "txb_searchname";
+            this.txb_searchname.Size = new System.Drawing.Size(149, 22);
+            this.txb_searchname.TabIndex = 6;
             // 
-            // label11
+            // txb_searchnhom
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 49);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 17);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Mã lap:";
+            this.txb_searchnhom.Location = new System.Drawing.Point(230, 48);
+            this.txb_searchnhom.Name = "txb_searchnhom";
+            this.txb_searchnhom.Size = new System.Drawing.Size(94, 22);
+            this.txb_searchnhom.TabIndex = 5;
             // 
-            // label12
+            // txb_searchid
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(154, 49);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 17);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "Mã nhóm:";
+            this.txb_searchid.Location = new System.Drawing.Point(63, 47);
+            this.txb_searchid.Name = "txb_searchid";
+            this.txb_searchid.Size = new System.Drawing.Size(81, 22);
+            this.txb_searchid.TabIndex = 4;
             // 
             // label13
             // 
@@ -452,26 +431,34 @@
             this.label13.TabIndex = 3;
             this.label13.Text = "Tên:";
             // 
-            // txb_searchid
+            // label12
             // 
-            this.txb_searchid.Location = new System.Drawing.Point(63, 47);
-            this.txb_searchid.Name = "txb_searchid";
-            this.txb_searchid.Size = new System.Drawing.Size(81, 22);
-            this.txb_searchid.TabIndex = 4;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(154, 49);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 17);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Mã nhóm:";
             // 
-            // txb_searchnhom
+            // label11
             // 
-            this.txb_searchnhom.Location = new System.Drawing.Point(230, 48);
-            this.txb_searchnhom.Name = "txb_searchnhom";
-            this.txb_searchnhom.Size = new System.Drawing.Size(94, 22);
-            this.txb_searchnhom.TabIndex = 5;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(3, 49);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 17);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Mã lap:";
             // 
-            // txb_searchname
+            // label10
             // 
-            this.txb_searchname.Location = new System.Drawing.Point(400, 48);
-            this.txb_searchname.Name = "txb_searchname";
-            this.txb_searchname.Size = new System.Drawing.Size(149, 22);
-            this.txb_searchname.TabIndex = 6;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(3, 12);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(86, 17);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "TÌM KIẾM";
             // 
             // frmThongTinLap
             // 
@@ -540,7 +527,6 @@
         private System.Windows.Forms.Button btn_addttl;
         private System.Windows.Forms.Button btn_deletttn;
         private System.Windows.Forms.Button btn_fixttl;
-        private System.Windows.Forms.Button btn_inttl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cbb_idnhomlap;
         private System.Windows.Forms.Label label8;

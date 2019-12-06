@@ -21,13 +21,13 @@ namespace QLTiemLaptop
         
         public void Load_datanv()
         {
-            string str = "select * from NhanVien";
+            string str = @"exec dbo.uspLaynhanvien";
             DataTable dt = connect.getDataTable(str);
             dtgv_nhanvien.DataSource = dt;
         }
         public void Load_cbb_idchucvu()
         {
-            string loadchucvu = "select * from ChucVu";
+            string loadchucvu = @"exec dbo.uspLaychucvu";
             cbb_idchucvunv.ValueMember = "IDChucVu";
             cbb_idchucvunv.DisplayMember = "TenChucVu";
             

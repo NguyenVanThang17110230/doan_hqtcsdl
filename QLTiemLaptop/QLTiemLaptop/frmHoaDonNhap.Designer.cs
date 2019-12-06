@@ -34,19 +34,15 @@
             this.btn_clearnhap = new System.Windows.Forms.Button();
             this.btn_exitnhap = new System.Windows.Forms.Button();
             this.btn_addnhap = new System.Windows.Forms.Button();
-            this.btn_innhap = new System.Windows.Forms.Button();
             this.btn_fixnhap = new System.Windows.Forms.Button();
             this.btn_deletnhap = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.cbb_tenlapnhap = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txb_idnhanviennhap = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.txb_idnhacungcapnhap = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.txb_idlapnhap = new System.Windows.Forms.TextBox();
@@ -55,7 +51,6 @@
             this.txb_soluongnhap = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.txb_ngaynhap = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.txb_dongianhap = new System.Windows.Forms.TextBox();
@@ -65,6 +60,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txb_idhoadonnhap = new System.Windows.Forms.TextBox();
+            this.dtp_ngaynhap = new System.Windows.Forms.DateTimePicker();
+            this.cbb_nhanviennhap = new System.Windows.Forms.ComboBox();
+            this.cbb_ncc = new System.Windows.Forms.ComboBox();
+            this.txb_tenlap = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_hoadonnhap)).BeginInit();
             this.panel2.SuspendLayout();
@@ -103,7 +102,6 @@
             this.dtgv_hoadonnhap.Size = new System.Drawing.Size(1295, 251);
             this.dtgv_hoadonnhap.TabIndex = 2;
             this.dtgv_hoadonnhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgv_hoadonnhap_CellClick);
-            
             // 
             // panel2
             // 
@@ -111,7 +109,6 @@
             this.panel2.Controls.Add(this.btn_clearnhap);
             this.panel2.Controls.Add(this.btn_exitnhap);
             this.panel2.Controls.Add(this.btn_addnhap);
-            this.panel2.Controls.Add(this.btn_innhap);
             this.panel2.Controls.Add(this.btn_fixnhap);
             this.panel2.Controls.Add(this.btn_deletnhap);
             this.panel2.Location = new System.Drawing.Point(6, 281);
@@ -121,7 +118,7 @@
             // 
             // btn_clearnhap
             // 
-            this.btn_clearnhap.Location = new System.Drawing.Point(13, 3);
+            this.btn_clearnhap.Location = new System.Drawing.Point(18, 3);
             this.btn_clearnhap.Name = "btn_clearnhap";
             this.btn_clearnhap.Size = new System.Drawing.Size(164, 30);
             this.btn_clearnhap.TabIndex = 0;
@@ -141,7 +138,7 @@
             // 
             // btn_addnhap
             // 
-            this.btn_addnhap.Location = new System.Drawing.Point(234, 3);
+            this.btn_addnhap.Location = new System.Drawing.Point(287, 3);
             this.btn_addnhap.Name = "btn_addnhap";
             this.btn_addnhap.Size = new System.Drawing.Size(164, 30);
             this.btn_addnhap.TabIndex = 1;
@@ -149,19 +146,9 @@
             this.btn_addnhap.UseVisualStyleBackColor = true;
             this.btn_addnhap.Click += new System.EventHandler(this.btn_addnhap_Click);
             // 
-            // btn_innhap
-            // 
-            this.btn_innhap.Location = new System.Drawing.Point(898, 3);
-            this.btn_innhap.Name = "btn_innhap";
-            this.btn_innhap.Size = new System.Drawing.Size(164, 30);
-            this.btn_innhap.TabIndex = 4;
-            this.btn_innhap.Text = "In hóa đơn";
-            this.btn_innhap.UseVisualStyleBackColor = true;
-            this.btn_innhap.Click += new System.EventHandler(this.btn_innhap_Click);
-            // 
             // btn_fixnhap
             // 
-            this.btn_fixnhap.Location = new System.Drawing.Point(452, 3);
+            this.btn_fixnhap.Location = new System.Drawing.Point(567, 3);
             this.btn_fixnhap.Name = "btn_fixnhap";
             this.btn_fixnhap.Size = new System.Drawing.Size(164, 30);
             this.btn_fixnhap.TabIndex = 2;
@@ -171,7 +158,7 @@
             // 
             // btn_deletnhap
             // 
-            this.btn_deletnhap.Location = new System.Drawing.Point(678, 3);
+            this.btn_deletnhap.Location = new System.Drawing.Point(847, 3);
             this.btn_deletnhap.Name = "btn_deletnhap";
             this.btn_deletnhap.Size = new System.Drawing.Size(164, 30);
             this.btn_deletnhap.TabIndex = 3;
@@ -199,20 +186,12 @@
             // panel11
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.cbb_tenlapnhap);
+            this.panel11.Controls.Add(this.txb_tenlap);
             this.panel11.Controls.Add(this.label9);
             this.panel11.Location = new System.Drawing.Point(452, 96);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(365, 56);
             this.panel11.TabIndex = 1;
-            // 
-            // cbb_tenlapnhap
-            // 
-            this.cbb_tenlapnhap.FormattingEnabled = true;
-            this.cbb_tenlapnhap.Location = new System.Drawing.Point(120, 17);
-            this.cbb_tenlapnhap.Name = "cbb_tenlapnhap";
-            this.cbb_tenlapnhap.Size = new System.Drawing.Size(240, 25);
-            this.cbb_tenlapnhap.TabIndex = 1;
             // 
             // label9
             // 
@@ -226,19 +205,12 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.txb_idnhanviennhap);
+            this.panel4.Controls.Add(this.cbb_nhanviennhap);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Location = new System.Drawing.Point(13, 96);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(365, 57);
             this.panel4.TabIndex = 0;
-            // 
-            // txb_idnhanviennhap
-            // 
-            this.txb_idnhanviennhap.Location = new System.Drawing.Point(151, 17);
-            this.txb_idnhanviennhap.Name = "txb_idnhanviennhap";
-            this.txb_idnhanviennhap.Size = new System.Drawing.Size(209, 25);
-            this.txb_idnhanviennhap.TabIndex = 3;
             // 
             // label3
             // 
@@ -252,8 +224,8 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.cbb_ncc);
             this.panel5.Controls.Add(this.label2);
-            this.panel5.Controls.Add(this.txb_idnhacungcapnhap);
             this.panel5.Location = new System.Drawing.Point(13, 176);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(365, 57);
@@ -267,13 +239,6 @@
             this.label2.Size = new System.Drawing.Size(118, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Mã nhà cung cấp";
-            // 
-            // txb_idnhacungcapnhap
-            // 
-            this.txb_idnhacungcapnhap.Location = new System.Drawing.Point(151, 11);
-            this.txb_idnhacungcapnhap.Name = "txb_idnhacungcapnhap";
-            this.txb_idnhacungcapnhap.Size = new System.Drawing.Size(209, 25);
-            this.txb_idnhacungcapnhap.TabIndex = 2;
             // 
             // panel6
             // 
@@ -326,12 +291,13 @@
             this.txb_soluongnhap.Name = "txb_soluongnhap";
             this.txb_soluongnhap.Size = new System.Drawing.Size(240, 25);
             this.txb_soluongnhap.TabIndex = 5;
+            this.txb_soluongnhap.TextChanged += new System.EventHandler(this.txb_soluongnhap_TextChanged);
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.dtp_ngaynhap);
             this.panel8.Controls.Add(this.label6);
-            this.panel8.Controls.Add(this.txb_ngaynhap);
             this.panel8.Location = new System.Drawing.Point(898, 14);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(365, 57);
@@ -346,13 +312,6 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Ngày nhập";
             // 
-            // txb_ngaynhap
-            // 
-            this.txb_ngaynhap.Location = new System.Drawing.Point(137, 16);
-            this.txb_ngaynhap.Name = "txb_ngaynhap";
-            this.txb_ngaynhap.Size = new System.Drawing.Size(223, 25);
-            this.txb_ngaynhap.TabIndex = 6;
-            // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -366,10 +325,9 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Location = new System.Drawing.Point(3, 16);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 19);
+            this.label7.Size = new System.Drawing.Size(58, 17);
             this.label7.TabIndex = 7;
             this.label7.Text = "Đơn giá";
             // 
@@ -432,6 +390,39 @@
             this.txb_idhoadonnhap.Size = new System.Drawing.Size(209, 25);
             this.txb_idhoadonnhap.TabIndex = 1;
             // 
+            // dtp_ngaynhap
+            // 
+            this.dtp_ngaynhap.CustomFormat = "";
+            this.dtp_ngaynhap.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_ngaynhap.Location = new System.Drawing.Point(137, 16);
+            this.dtp_ngaynhap.Name = "dtp_ngaynhap";
+            this.dtp_ngaynhap.ShowUpDown = true;
+            this.dtp_ngaynhap.Size = new System.Drawing.Size(221, 25);
+            this.dtp_ngaynhap.TabIndex = 7;
+            // 
+            // cbb_nhanviennhap
+            // 
+            this.cbb_nhanviennhap.FormattingEnabled = true;
+            this.cbb_nhanviennhap.Location = new System.Drawing.Point(151, 17);
+            this.cbb_nhanviennhap.Name = "cbb_nhanviennhap";
+            this.cbb_nhanviennhap.Size = new System.Drawing.Size(209, 25);
+            this.cbb_nhanviennhap.TabIndex = 4;
+            // 
+            // cbb_ncc
+            // 
+            this.cbb_ncc.FormattingEnabled = true;
+            this.cbb_ncc.Location = new System.Drawing.Point(151, 17);
+            this.cbb_ncc.Name = "cbb_ncc";
+            this.cbb_ncc.Size = new System.Drawing.Size(209, 25);
+            this.cbb_ncc.TabIndex = 3;
+            // 
+            // txb_tenlap
+            // 
+            this.txb_tenlap.Location = new System.Drawing.Point(121, 16);
+            this.txb_tenlap.Name = "txb_tenlap";
+            this.txb_tenlap.Size = new System.Drawing.Size(238, 25);
+            this.txb_tenlap.TabIndex = 1;
+            // 
             // frmHoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -481,21 +472,17 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_exitnhap;
-        private System.Windows.Forms.Button btn_innhap;
         private System.Windows.Forms.Button btn_deletnhap;
         private System.Windows.Forms.Button btn_fixnhap;
         private System.Windows.Forms.Button btn_addnhap;
         private System.Windows.Forms.Button btn_clearnhap;
-        private System.Windows.Forms.TextBox txb_idnhacungcapnhap;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txb_idnhanviennhap;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txb_idlapnhap;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txb_soluongnhap;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txb_ngaynhap;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txb_dongianhap;
         private System.Windows.Forms.Label label8;
@@ -503,7 +490,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txb_idhoadonnhap;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.ComboBox cbb_tenlapnhap;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cbb_nhanviennhap;
+        private System.Windows.Forms.DateTimePicker dtp_ngaynhap;
+        private System.Windows.Forms.TextBox txb_tenlap;
+        private System.Windows.Forms.ComboBox cbb_ncc;
     }
 }

@@ -26,7 +26,7 @@ namespace QLTiemLaptop
         }
         public void Load_datakh()
         {
-            string load = "select * from KhachHang";
+            string load = @"exec dbo.uspLaykhachhang";
             DataTable dtkh = connect.getDataTable(load);
             dtgv_khachhang.DataSource = dtkh;
             dtgv_khachhang.Columns[0].Width = 90;

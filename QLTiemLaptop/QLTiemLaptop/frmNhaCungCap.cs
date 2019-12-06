@@ -26,7 +26,7 @@ namespace QLTiemLaptop
         }
         public void Load_datancc()
         {
-            string load = "select * from NhaCC";
+            string load = @"exec dbo.uspLaynhacc";
             DataTable dt = connect.getDataTable(load);
             dtgv_nhacungcap.DataSource = dt;
         }
@@ -95,9 +95,7 @@ namespace QLTiemLaptop
                 catch(Exception)
                 {
                     MessageBox.Show("Không xóa được!!");
-                }
-                
-                
+                }                                
             }
         }
 

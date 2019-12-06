@@ -75,6 +75,7 @@
             // 
             // btn_exit
             // 
+            this.btn_exit.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.Location = new System.Drawing.Point(344, 402);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(75, 23);
@@ -90,6 +91,7 @@
             this.panel3.Controls.Add(this.btn_fixttkm);
             this.panel3.Controls.Add(this.btn_addttkm);
             this.panel3.Controls.Add(this.btn_clearttkm);
+            this.panel3.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(17, 304);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(402, 64);
@@ -144,6 +146,7 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.txb_tenlapkm);
             this.panel2.Controls.Add(this.txb_idkhuyenmai);
+            this.panel2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(17, 70);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(402, 203);
@@ -154,7 +157,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(10, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 17);
+            this.label2.Size = new System.Drawing.Size(112, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mã khuyến mãi";
             // 
@@ -163,15 +166,15 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(10, 89);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 17);
+            this.label3.Size = new System.Drawing.Size(77, 19);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mã laptop";
             // 
             // txb_thongtinkm
             // 
-            this.txb_thongtinkm.Location = new System.Drawing.Point(151, 150);
+            this.txb_thongtinkm.Location = new System.Drawing.Point(151, 149);
             this.txb_thongtinkm.Name = "txb_thongtinkm";
-            this.txb_thongtinkm.Size = new System.Drawing.Size(224, 22);
+            this.txb_thongtinkm.Size = new System.Drawing.Size(224, 27);
             this.txb_thongtinkm.TabIndex = 7;
             // 
             // label4
@@ -179,32 +182,32 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(10, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 17);
+            this.label4.Size = new System.Drawing.Size(73, 19);
             this.label4.TabIndex = 3;
             this.label4.Text = "Thông tin";
             // 
             // txb_tenlapkm
             // 
-            this.txb_tenlapkm.Location = new System.Drawing.Point(151, 89);
+            this.txb_tenlapkm.Location = new System.Drawing.Point(151, 88);
             this.txb_tenlapkm.Name = "txb_tenlapkm";
-            this.txb_tenlapkm.Size = new System.Drawing.Size(224, 22);
+            this.txb_tenlapkm.Size = new System.Drawing.Size(224, 27);
             this.txb_tenlapkm.TabIndex = 6;
             // 
             // txb_idkhuyenmai
             // 
-            this.txb_idkhuyenmai.Location = new System.Drawing.Point(151, 27);
+            this.txb_idkhuyenmai.Location = new System.Drawing.Point(151, 26);
             this.txb_idkhuyenmai.Name = "txb_idkhuyenmai";
-            this.txb_idkhuyenmai.Size = new System.Drawing.Size(224, 22);
+            this.txb_idkhuyenmai.Size = new System.Drawing.Size(224, 27);
             this.txb_idkhuyenmai.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(82, 15);
+            this.label1.Location = new System.Drawing.Point(59, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 22);
+            this.label1.Size = new System.Drawing.Size(313, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "THÔNG TIN KHUYẾN MÃI";
             // 
