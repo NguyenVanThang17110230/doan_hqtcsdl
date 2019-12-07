@@ -87,24 +87,73 @@ namespace QLTiemLaptop
             this.Close();
         }
 
-        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult dialog = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(dialog==DialogResult.Yes)
-            {
-                this.Hide();
-                Form login = new frmDangNhap();
-                login.ShowDialog();
-                this.Close();
-            }           
-        }
-
         private void tToolStripMenuItem_Click(object sender, EventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Bạn có chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if(dialog==DialogResult.Yes)
             {
                 Application.Exit();
+            }
+        }
+
+        private void tgtoolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form tg = new frmHoaDonTraGop();
+            tg.ShowDialog();
+            this.Close();
+        }
+
+        private void tkhdbToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form a = new frmThongKeHoaDonBan();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void tkhdnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form a = new frmThongKeHoaDonNhap();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void tkhdtgToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form a = new frmThongKeTraGop();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void nvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form a = new frmNhanVien();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void luongnvToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form a = new frmLuongNhanVien();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void tkToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form a = new frmQuanLyTaiKhoan();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Hide();
+                Form login = new frmDangNhap();
+                login.ShowDialog();
+                this.Close();
             }
         }
     }

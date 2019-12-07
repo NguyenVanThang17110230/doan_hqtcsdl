@@ -68,6 +68,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_thongtinlap)).BeginInit();
             this.panel9.SuspendLayout();
@@ -85,13 +86,14 @@
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.btn_exit);
             this.panel5.Controls.Add(this.btn_clearttl);
             this.panel5.Controls.Add(this.btn_addttl);
             this.panel5.Controls.Add(this.btn_deletttn);
             this.panel5.Controls.Add(this.btn_fixttl);
-            this.panel5.Location = new System.Drawing.Point(393, 559);
+            this.panel5.Location = new System.Drawing.Point(213, 559);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(738, 47);
+            this.panel5.Size = new System.Drawing.Size(918, 47);
             this.panel5.TabIndex = 1;
             // 
             // btn_clearttl
@@ -460,6 +462,16 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "TÌM KIẾM";
             // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(770, 3);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(136, 39);
+            this.btn_exit.TabIndex = 6;
+            this.btn_exit.Text = "Thoát";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // frmThongTinLap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -540,5 +552,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn_exit;
     }
 }
