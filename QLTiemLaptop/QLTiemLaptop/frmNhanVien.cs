@@ -122,5 +122,14 @@ namespace QLTiemLaptop
             DataTable dt2 = connect.getDataTable(searchname);
             dtgv_nhanvien.DataSource = dt2;
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

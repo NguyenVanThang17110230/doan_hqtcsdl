@@ -61,6 +61,7 @@
             this.txb_searchname = new System.Windows.Forms.TextBox();
             this.txb_searchid = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -77,13 +78,14 @@
             // panel10
             // 
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.btn_exit);
             this.panel10.Controls.Add(this.btn_clearnhanvien);
             this.panel10.Controls.Add(this.btn_themnhanvien);
             this.panel10.Controls.Add(this.btn_fixnhanvien);
             this.panel10.Controls.Add(this.btn_xoanhanvien);
-            this.panel10.Location = new System.Drawing.Point(317, 533);
+            this.panel10.Location = new System.Drawing.Point(169, 533);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(646, 49);
+            this.panel10.Size = new System.Drawing.Size(794, 49);
             this.panel10.TabIndex = 2;
             // 
             // btn_clearnhanvien
@@ -385,6 +387,16 @@
             this.label9.TabIndex = 0;
             this.label9.Text = "Tìm kiếm:";
             // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(654, 9);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(127, 35);
+            this.btn_exit.TabIndex = 11;
+            this.btn_exit.Text = "Thoát";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
+            // 
             // frmNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -456,5 +468,6 @@
         private System.Windows.Forms.TextBox txb_searchname;
         private System.Windows.Forms.TextBox txb_searchid;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btn_exit;
     }
 }

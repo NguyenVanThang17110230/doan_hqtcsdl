@@ -33,12 +33,9 @@ namespace QLTiemLaptop
 
         private void btn_exitncc_Click(object sender, EventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Bạn chắc chắn muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(dialog==DialogResult.Yes)
+            DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialog == DialogResult.Yes)
             {
-                this.Hide();
-                Form main = new frmMain();
-                main.ShowDialog();
                 this.Close();
             }
         }

@@ -147,7 +147,7 @@ namespace QLTiemLaptop
             DialogResult dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Close();
             }
         }
     }
