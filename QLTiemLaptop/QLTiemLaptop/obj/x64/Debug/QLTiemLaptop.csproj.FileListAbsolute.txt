@@ -21,3 +21,4 @@ C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x6
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmThongKeTraGop.resources
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmLuongNhanVien.resources
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmQuanLyTaiKhoan.resources
+C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x64\Debug\QLTiemLaptop.frmNhomLap.resources

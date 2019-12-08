@@ -198,5 +198,19 @@ namespace QLTiemLaptop
                 MessageBox.Show("Bạn không có quyền sử dụng!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void nhomLaptopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (PhanQuyen == "3" || PhanQuyen == "4")
+            {
+                Form nl = new frmNhomLap();
+                nl.ShowDialog();
+
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền sử dụng!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

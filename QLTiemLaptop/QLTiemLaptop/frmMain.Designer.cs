@@ -46,6 +46,7 @@
             this.tkToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nhomLaptopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,8 @@
             this.ttlToolStripMenuItem,
             this.nccToolStripMenuItem,
             this.khToolStripMenuItem,
-            this.ttkmToolStripMenuItem});
+            this.ttkmToolStripMenuItem,
+            this.nhomLaptopToolStripMenuItem});
             this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.menuToolStripMenuItem.Text = "Chức năng";
@@ -196,6 +198,13 @@
             this.tToolStripMenuItem.Text = "Thoát";
             this.tToolStripMenuItem.Click += new System.EventHandler(this.tToolStripMenuItem_Click);
             // 
+            // nhomLaptopToolStripMenuItem
+            // 
+            this.nhomLaptopToolStripMenuItem.Name = "nhomLaptopToolStripMenuItem";
+            this.nhomLaptopToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
+            this.nhomLaptopToolStripMenuItem.Text = "Nhóm Laptop";
+            this.nhomLaptopToolStripMenuItem.Click += new System.EventHandler(this.nhomLaptopToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -232,5 +241,6 @@
         private System.Windows.Forms.ToolStripMenuItem luongnvToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tkToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tgtoolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem nhomLaptopToolStripMenuItem;
     }
 }
