@@ -38,20 +38,22 @@
             // dtgv_Luongnhanvien
             // 
             this.dtgv_Luongnhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgv_Luongnhanvien.Location = new System.Drawing.Point(14, 75);
+            this.dtgv_Luongnhanvien.Location = new System.Drawing.Point(10, 61);
+            this.dtgv_Luongnhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtgv_Luongnhanvien.Name = "dtgv_Luongnhanvien";
             this.dtgv_Luongnhanvien.RowHeadersWidth = 51;
             this.dtgv_Luongnhanvien.RowTemplate.Height = 24;
-            this.dtgv_Luongnhanvien.Size = new System.Drawing.Size(707, 201);
+            this.dtgv_Luongnhanvien.Size = new System.Drawing.Size(530, 163);
             this.dtgv_Luongnhanvien.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dtgv_Luongnhanvien);
-            this.panel1.Location = new System.Drawing.Point(15, 12);
+            this.panel1.Location = new System.Drawing.Point(11, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(740, 295);
+            this.panel1.Size = new System.Drawing.Size(555, 240);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -59,20 +61,23 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(230, 16);
+            this.label1.Location = new System.Drawing.Point(172, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 35);
+            this.label1.Size = new System.Drawing.Size(194, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Lương Nhân Viên";
             // 
             // frmLuongNhanVien
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(771, 318);
+            this.ClientSize = new System.Drawing.Size(578, 258);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmLuongNhanVien";
-            this.Text = "frmLuongNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Lương Nhân Viên";
             this.Load += new System.EventHandler(this.frmLuongNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgv_Luongnhanvien)).EndInit();
             this.panel1.ResumeLayout(false);

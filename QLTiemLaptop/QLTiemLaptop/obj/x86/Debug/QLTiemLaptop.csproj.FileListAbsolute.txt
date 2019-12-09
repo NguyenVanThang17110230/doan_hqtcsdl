@@ -14,3 +14,28 @@ C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x8
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmNhanVien.resources
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmKhachHang.resources
 C:\Users\Admin\OneDrive\Máy tính\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmMain.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\x86\Debug\QLTiemLaptop.exe.config
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\x86\Debug\QLTiemLaptop.exe
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\bin\x86\Debug\QLTiemLaptop.pdb
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmDangNhap.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmHoaDonBan.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmHoaDonNhap.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmHoaDonTraGop.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmKhachHang.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmLuongNhanVien.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmMain.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmNhaCungCap.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmNhanVien.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmNhomLap.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmQuanLyTaiKhoan.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmThongKeHoaDonBan.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmThongKeHoaDonNhap.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmThongKeTraGop.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmThongTinKhuyenMai.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.Properties.Resources.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.frmThongTinLap.resources
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.exe
+C:\Users\Admin\Desktop\doan_hqtcsdl\QLTiemLaptop\QLTiemLaptop\obj\x86\Debug\QLTiemLaptop.pdb

@@ -20,7 +20,7 @@ namespace QLLaptop
         static string source;
         public static void openConnection()
         {
-            source = @"Data Source=LAPTOPNEWBT\THANG;Initial Catalog=QLlaptop2;Integrated Security=True";
+            source = @"Data Source=DESKTOP-EH88R88;Initial Catalog=QLlaptop2;Integrated Security=True";
             cnn = new SqlConnection(source);
             try
             {
